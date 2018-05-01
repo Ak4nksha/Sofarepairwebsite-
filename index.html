@@ -75,6 +75,16 @@
 }
 </style>
 
+ <!--form validate -->
+    <script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Invalid input");
+        return false;
+    }
+}
+</script>
 
 
 </head>
@@ -98,8 +108,8 @@
    	     <li class="nav-item">
    	     <div class="dropdown">
    	       
-   	          <button class="dropbtn"> Services <i class="fa fa-caret-down"></i></button>
-   	        	<div class="dropdown-content">
+   	          <button class="dropbtn dropdown"> Services <i class="fa fa-caret-down"></i></button>
+   	        	<div class="dropdown-content dropdown">
    	        		<a href="#">Sofa upholstery </a>
    	        	    <a href="#">Furniture upholstery </a>
    	        		<a href="#">Upholstery material</a>
@@ -114,7 +124,7 @@
    	     	<a class="nav-link"  href="#">Cleaning</a>
    	     </li>
    	     <li class="nav-item">
-   	     	<a class="nav-link"  href="./contact.html">Contact</a>
+   	     	<a class="nav-link"  href="#contact">Contact</a>
    	     </li>
    	   	
    	   </ul>
@@ -156,8 +166,24 @@
 <!--- Jumbotron -->
 <div class="container-fluid"></div>
 <div class="row-jumbotron"></div>
-<!--- Welcome Section -->
+<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+	<p class="lead">Fill out the form now to get a free quote</p>
+	<p class="lead">Tell us about the problem with your sofa and the services you are looking forward to.</p>
+</div>
 
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Transform Your Sofa</h1>
+			<hr>
+			<div class="col-12">
+				<p class="lead">Welcome to Sofa repairing website.An upholstery service is a great way to repair your home furniture and have it looking like new.  The best thing about upholstery repair services is that your furniture will look like new without the cost that goes into purchasing new furniture.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!--- Three Column Section -->
 
@@ -167,8 +193,89 @@
 
 
 <!--- Cards -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top"  src="img/sofa-repair.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Sofa repair</h4>
+					<p class="card-text">The perfect option to restore your sofas is through techniques employed by our skilled professionals. We have an equipped team of sofa specialists on call to attend to your squashy couches, torn cushions or ripped seams at all times.</p>
+				</div>
+			</div>
+		</div>
 
 
+       <div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top"  src="img/sofa-upholstery.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Sofa upholstery</h4>
+					<p class="card-text">Different kinds of materials respond differently in different environments. When your sofa is handed over to us, it rests in the hands of a team of experienced professional upholsterers who combine their knowledge with your tastes in colour and comfort to provide you with only the best.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top"  src="img/sofa-clean.jpg">
+				<div class="card-body">
+					<h4 class="card-title">Sofa cleaning & polishing</h4>
+					<p class="card-text">With a multitude number of polishes to choose from, ranging from antibacterial to fragrant; and our expertly crafted formulas, we gently transform your sofa into an experience that is deep, brilliant and rich in shine.</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+
+
+
+<div id="contact">
+	
+<p>
+	We welcome inquiries from Customers and Upholstering Companies, please fill the form to contact us.
+</p>
+<br>
+<br>
+
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+
+                <div class="form-group">
+						<label class="control-label col-md-3">Name:</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" name="first" placeholder="Enter Name" onblur="return validateName(this)" required>
+						</div>
+					</div>
+               <div class="form-group">
+						<label class="control-label col-md-3">Email:</label>
+						<div class="col-md-9">
+							<input type="email" class="form-control" name="email" placeholder="Enter Email" onblur="return validateEmail(this)" required>
+						</div>
+					</div>
+                <div class="form-group">
+						<label class="control-label col-md-3">Phone Number:</label>
+						<div class="col-md-9">
+							<input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" min="1000000000" max="9999999999" required>
+						</div>
+					</div>
+				<div class="form-group">
+					 <label class="control-label col-md-3" >Message:</label>
+					 <div class="col-md-9">
+					 	<input type="textarea" class="form-control"  name="Message" placeholder="Your message here" required>
+					 </div>
+				</div>	
+
+
+               <div class="form-group">
+						<label class="control-label col-md-3"></label>
+						<div class="col-md-9">
+							<button type="submit" class="btn btn-primary" name="submit">Send</button>
+						</div>
+					</div>
+</form>
+</div>
 <!--- Two Column Section -->
 
 
