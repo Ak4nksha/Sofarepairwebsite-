@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact-form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+
+
+    <!--form validate -->
+    <script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Invalid input");
+        return false;
+    }
+}
+</script>
+
+<!-- name validation-->
+
+
+
+</head>
+<body>
+
+<p>
+	We welcome inquiries from Customers and Upholstering Companies, please fill the form to contact us.
+</p>
+<br>
+<br>
+
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+
+                <div class="form-group">
+						<label class="control-label col-md-3">Name:</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" name="first" placeholder="Enter Name" onblur="return validateName(this)" required>
+						</div>
+					</div>
+               <div class="form-group">
+						<label class="control-label col-md-3">Email:</label>
+						<div class="col-md-9">
+							<input type="email" class="form-control" name="email" placeholder="Enter Email" onblur="return validateEmail(this)" required>
+						</div>
+					</div>
+                <div class="form-group">
+						<label class="control-label col-md-3">Phone Number:</label>
+						<div class="col-md-9">
+							<input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" min="1000000000" max="9999999999" required>
+						</div>
+					</div>
+				<div class="form-group">
+					 <label class="control-label col-md-3" >Message:</label>
+					 <div class="col-md-9">
+					 	<input type="textarea" class="form-control"  name="Message" placeholder="Your message here" required>
+					 </div>
+				</div>	
+
+
+               <div class="form-group">
+						<label class="control-label col-md-3"></label>
+						<div class="col-md-9">
+							<button type="submit" class="btn btn-primary" name="submit">Send</button>
+						</div>
+					</div>
+</form>
+
+</body>
+</html>
