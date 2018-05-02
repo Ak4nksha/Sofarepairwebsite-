@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 
 <!--- Jumbotron -->
+<center  >
 <div class="container-fluid">
 <div class="row-jumbotron">
 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
@@ -135,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 </div>
 </div>
+</center>
 
 
 <!--- Welcome Section -->
@@ -213,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     <label class="control-label col-md-9"><i class="fas fa-user"> </i> Name: </label>
 						<div class="col-md-9">
 
-							<input type="text" class="form-control" name="first" placeholder="Enter Name" onblur="return validateName(this)" required>
+							<input type="text" class="form-control" name="first" style="box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;" placeholder="Enter Name" onblur="return validateName(this)" required>
 						</div>
 					</div>
 					</div>
@@ -221,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 <div class="col-xs-4 col-sm-4 col-md-4 ">
 						<label class="control-label col-md-3"><i class="fas fa-at"></i> Email: </label>
 						<div class="col-md-9">
-							<input type="email" class="form-control" name="email" placeholder="Enter Email" onblur="return validateEmail(this)" required>
+							<input type="email" class="form-control" name="email" style="box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;" placeholder="Enter Email" onblur="return validateEmail(this)" required>
 						</div>
 					</div>
 					</div>
@@ -230,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function(){
                  <div class="col-xs-4 col-sm-4 col-md-4 ">
 						<label class="control-label col-md-9"><i class="fas fa-mobile-alt"></i>  Phone Number: </label>
 						<div class="col-md-9">
-							<input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" min="1000000000" max="9999999999" required>
+							<input type="number" class="form-control" style="box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;" name="phone" placeholder="Enter Phone Number" min="1000000000" max="9999999999" required>
 						</div>
 					</div>
 					</div>
@@ -240,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				 <div class="col-xs-4 col-sm-4 col-md-4 ">
 					 <label class="control-label col-md-9" ><i class="fas fa-comment"></i>  Message: </label>
 					 <div class="col-md-9">
-					 	<input type="textarea"  class="form-control"  name="Message" placeholder="Your message here" required>
+					 	<input type="textarea"  class="form-control" style="width: 100%;height: 150px;padding: 12px 20px;box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;"  name="Message" placeholder="Your message here" required>
 					 </div>
 				</div>
 				</div>	
@@ -273,27 +275,31 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <!--- Footer -->
 
-<footer style="border-top: 5px solid #3e3f3a; padding-top: 20px;" >
+<footer style="border-top: 3px solid #3e3f3a; padding-top: 10px;background-color: black " >
 <div class="row">
-	<div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-		<p class="lead" style="font-size: 30px; font-weight: 700; color: blue; font-family: Georgia">Follow us</p><br>
-		<div style="font-size: 30px">
+	 <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4 "> 
+		<p class="lead" style="font-size: 35px; font-weight: 300; color:white; font-family:comic Sans MS; padding-left: 40px;" >Follow us</p>
+		<div style="padding-left: 40px">
+		<div style="font-size: 30px;color: lightblue">
 		<i class="fab fa-facebook"></i>
 		<i class="fab fa-twitter"></i>
-		<i class="fab fa-instagram"></i>
-		<i class="fas fa-phone"></i>
-		<i class="fas fa-envelope"></i>
+		<i class="fab fa-instagram"></i><br>
+		<div style="font-size: 20px;color: lightblue">
+		<p><i class="fas fa-envelope"></i>  hello@sofarepair.co</p>
+		<p><i class="fas fa-phone"></i>  (+91) 7237654981</p>
 		</div>
-
-	</div>
-		<div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-		<p class="lead" style="font-size: 30px; font-weight: 700; color: blue; font-family: Georgia">Website tools</p><br>
-		<a href="#">Disclaimer</a><br>
-		<a href="#">privacy policy</a><br>
-		<a href="#">Site map</a>
+		</div>
+		</div>
+		</div>
+		 <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+		<p class="lead" style="font-size: 35px;  color: white; font-family:comic Sans MS;">Website tools</p>
+		<a href="#" style="font-family: Georgia; font-size:25px;color: lightblue">Disclaimer</a><br>
+		<a href="#" style="font-family: Georgia; font-size: 20px;color: lightblue">privacy policy</a><br>
+		<a href="#" style="font-family: Georgia;font-size: 17px;color: lightblue">Site map</a>
 </div>
-<div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.8112950919635!2d77.66268731419967!3d12.85545422089595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c9828805557%3A0x9f54452eaea0845d!2sSofa+Clinic+%5BSofa+Repair%2C+Upholstery%2C+Renovation%2C+Polishing+%26+Cleaning+Services+Provider%5D!5e0!3m2!1sen!2sin!4v1525183285517" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div class="col-xs-3 col-sm-4 col-md-4 col-lg-4 col-xl-4 "> 
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.8112950919635!2d77.66268731419967!3d12.85545422089595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c9828805557%3A0x9f54452eaea0845d!2sSofa+Clinic+%5BSofa+Repair%2C+Upholstery%2C+Renovation%2C+Polishing+%26+Cleaning+Services+Provider%5D!5e0!3m2!1sen!2sin!4v1525183285517" width="90%" height="100%" frameborder="0" style="border:1 " allowfullscreen></iframe>
 </div>
 </div>
 
