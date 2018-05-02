@@ -24,7 +24,7 @@ div#preloader{
 	width: 100%;
 	height: 100%;
 	overflow: visible;
-	background: #333 
+	background: #F8F8FF
 	url('./preload.gif') no-repeat center center;
 }
 .h1{
@@ -51,42 +51,21 @@ div#preloader{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-
-
-
+.modal-backdrop {
+	position: relative;
+}
 </style>
 
-<!-- form validate -->
-    <script>
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-        alert("Invalid input");
-        return false;
-    }
-}
- //preloader
+  <script>
 
-// $(document).ready(function($){
-// 	$(window).load(function(){
-// 		// $('#preloader').fadeout(5000,function(){
-// 		// 	document.getElementById('preloader').outerHTML = ""
-// 		// });
-// 		console.log("abcd")
-// 	});
-// });
+ //preloader
 
 document.addEventListener('DOMContentLoaded', function(){
 	document.getElementById('preloader').outerHTML = "";
 }, false);
 
-<script>
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#Success").modal();
-    });
-});
+// modal
+
 </script>
 
 
@@ -157,7 +136,7 @@ $(document).ready(function(){
 </div>
 
 <!--- Jumbotron -->
-<center  >
+<center >
 <div class="container-fluid">
 <div class="jumbotron">
 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
@@ -181,13 +160,6 @@ $(document).ready(function(){
 		</div>
 	</div>
 </div>
-
-<!--- Three Column Section -->
-
-
-
-<!--- Fixed background -->
-
 
 <!--- Cards -->
 <div class="container-fluid padding">
@@ -225,18 +197,18 @@ $(document).ready(function(){
     </div>
 </div>
 
-
-
 <br>
 <br>
+
+<!-- contact form -->
+
 <div class="container-fluid">
 <div class="card">
-<div class="card-header"><p>
-	We welcome inquiries from Customers and Upholstering Companies, please fill the form to contact us.
-</p></div>
+<div class="card-header">
+	<p>We welcome inquiries from Customers and Upholstering Companies, please fill the form to contact us.</p></div>
 <div class="card-block">
 <center>
-<form name="myForm" onsubmit="return validateForm()" id="contact-form">
+<form name="myForm" id="contact-form">
             
           
 
@@ -284,7 +256,7 @@ $(document).ready(function(){
                 <div class="col-xs-4 col-sm-4 col-md-4 ">
 						<label class="control-label col-md-3"></label>
 						<div class="col-md-9">
-			<button type="submit" class="btn btn-primary" name="submit" style="font-size: 25px" id="myBtn"  data-toggle="modal" data-target="#Success" >  Send  <i class="fas fa-paper-plane"></i></button>
+			<button type="submit" class="btn btn-primary" name="submit" style="font-size: 25px" id="myBtn">  Send  <i class="fas fa-paper-plane"></i></button>
 						</div>
 					</div>
 					</div>
@@ -299,15 +271,15 @@ $(document).ready(function(){
 
 			<!-- Modal Content -->
 			<div class="modal-content">
-				<div class="modal-header">
+				<!--  <div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h3 class="modal-title">Message Sent!</h3>
-				</div>
+				</div> -->
 				<div class="modal-body">
 					<h4>Your message has been sent, thanks!</h4>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal"> OK </button>
 				</div>
 			</div>
 
@@ -346,10 +318,14 @@ $(document).ready(function(){
 </div>
 </div>
 
-	
-
 </footer>
 </div>
+<script type="text/javascript">
+	$("#contact-form").submit(function(e){
+		e.preventDefault();
+		$("#Success").modal();
+	});
+</script>
 
 
 </body>
