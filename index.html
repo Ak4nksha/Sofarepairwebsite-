@@ -214,39 +214,35 @@ document.addEventListener('DOMContentLoaded', function(){
 <form name="myForm" id="contact-form">
             
       <div class="form-row">
-          <div class="col-md-6">
-       <div class="form-group">
-                <div class="col-xs-4 col-sm-4 col-md-4 ">
-                    <label class="control-label col-md-9" style="font-size: 25px"><i class="fas fa-user"> </i> Name: </label>
-						<div class="col-md-9">
+       <div class="form-group col-md-4" >
+                
+                    <label class="control-label " style="font-size: 25px"><i class="fas fa-user"> </i> Name: </label>
+						
 
 							<input type="text" class="form-control" name="first" style="box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;" placeholder="Enter Name" onblur="return validateName(this)" required>
 						</div>
 					</div>
 					</div>
-               <div class="form-group">
-                <div class="col-xs-4 col-sm-4 col-md-4 ">
-						<label class="control-label col-md-9" style="font-size: 25px"><i class="fas fa-at"></i> Email: </label>
-						<div class="col-md-9">
+               <div class="form-group col-md-4">
+						<label class="control-label " style="font-size: 25px"><i class="fas fa-at"></i> Email: </label>
+						
 							<input type="email" class="form-control" name="email" style="box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;" placeholder="Enter Email" onblur="return validateEmail(this)" required>
 						</div>
 					</div>
 					</div>
 
 					
-                <div class="form-group">
-                 <div class="col-xs-4 col-sm-4 col-md-4 ">
-						<label class="control-label col-md-9" style="font-size: 25px"><i class="fas fa-mobile-alt"></i>  Phone Number: </label>
-						<div class="col-md-9">
+                <div class="form-group col-md-4">
+						<label class="control-label " style="font-size: 25px"><i class="fas fa-mobile-alt"></i>  Phone Number: </label>
+						
 							<input type="number" class="form-control" style="box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;" name="phone" placeholder="Enter Phone Number" min="1000000000" max="9999999999" required>
 						</div>
 					</div>
 					</div>
 				</div>
+				<div class="form-row">
 			
-					<div class="col-md-6">
-				<div class="form-group">
-				 <div class="col-xs-4 col-sm-4 col-md-4 ">
+				<div class="form-group col-md-12 ">
 					 <label class="control-label col-md-9" style="font-size: 25px" ><i class="fas fa-comment"></i>  Message: </label>
 					 <div class="col-md-9">
 					 <textarea form="contact-form" rows="6" cols="40" style="box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8; width: inherit;" placeholder="Your message here" required="required"></textarea>
@@ -256,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				</div>
 				</div>
 				</div>
-				
+				</div>		
 				
 					
 
